@@ -15,7 +15,7 @@ try:
     from django.utils.encoding import smart_text as smart_txt
 except ImportError: # Django 3+
     '''
-    "The smart_text() and force_text() aliases (since Django 2.0) of 
+    "The smart_text() and force_text() aliases (since Django 2.0) of
     smart_str() and force_str() are deprecated...".
 
     Taken from:
@@ -62,7 +62,7 @@ def jet_get_menu(context):
 def jet_get_bookmarks(user):
     if user is None:
         return None
-    return Bookmark.objects.filter(user=user.pk)
+    return Bookmark.objects.filter(user=user)
 
 
 @register.filter
