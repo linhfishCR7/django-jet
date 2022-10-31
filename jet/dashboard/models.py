@@ -1,5 +1,6 @@
 from importlib import import_module
 import json
+import uuid
 from django.db import models
 try:
     from django.utils.translation import ugettext_lazy as _
